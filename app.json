@@ -1,11 +1,11 @@
 {
-  "name": "CASEYRHODES-XMD",
-  "description": "Javascript WhatsApp bot made by CASEYRHODES.",
+  "name": "Njabulo_Jb",
+  "description": "Javascript WhatsApp bot made by Njabulo Jb.",
   "keywords": ["CASEYRHODES-XMD"],
   
   
-  "logo": "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
-  "repository": "https://github.com/caseyweb/NHEZHO-MD",
+  "logo": "https://files.catbox.moe/w947g3.jpg",
+  "repository": "https://github.com/NjabuloJ/Njabulo_Jb",
   "succes_url": "/",
 
   "stack": "container",
@@ -19,13 +19,13 @@
     "ALIVE_IMG": {
       "description": "paste your image url if you don't have you can use this public url.",
       "required": false,
-      "value": "https://i.ibb.co/8gHCXCV9/IMG-20250216-WA0009.jpg"
+      "value": "https://files.catbox.moe/w947g3.jpg"
     }, 
     
     "LIVE_MSG": {
       "description": "paste your alive message hear.",
       "required": false,
-      "value": "> CASEYRHODES-XMD IS ACTIVE AND ALIVE⚡"
+      "value": "> NJABULO JB IS ACTIVE AND ALIVE"
     },
     
     "PREFIX": {
@@ -82,26 +82,26 @@
     "AUTO_STATUS__MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*🎉👀 sᴇᴇɴ ʙʏ ᴄᴀsᴇʏʀʜᴏᴅᴇs xᴍᴅ🚀🔥*"
+      "value": "Njabulo Jb see status"
     }, 
 
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "ᴄᴀsᴇʏʀʜᴏᴅᴇs 🫅"
+      "value": "Njabulo Jb"
 }, 
 
     "OWNER_NUMBER": {
       "description": "put the owner number for bot.",
       "required": false,
-      "value": "254112192119"
+      "value": "26777821911"
 
     }, 
 
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "✦ ᴄᴀsᴇʏʀʜᴏᴅᴇs xᴍᴅ✦"
+      "value": "Njabulo Jb"
 
       }, 
 
@@ -121,7 +121,7 @@
      "DESCRIPTION": {
       "description": "add caption for menu and other",
       "required": false,
-      "value": "*© ✦ᴄᴀsᴇʏʀʜᴏᴅᴇs xᴍᴅ✦*"
+      "value": "Njabulo Jb"
     },
 
       "DELETE_LINKS": {
