@@ -1,2 +1,5 @@
-# Njabulo_Jb
-WhatsApp bot create by Njabulo JB Office 💗
+##please visit the web to deploy.
+
+
+https://deploying-green.vercel.app/
+
