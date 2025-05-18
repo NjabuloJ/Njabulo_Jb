@@ -714,7 +714,19 @@ zk.ev.on('group-participants.update', async (group) => {
 
             msg += `↪️ READ THE GROUP DESCRIPTION TO AVOID GETTING REMOVED `;
 
-            zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
+            zk.sendMessage(group.id, { 
+            image: { url: ppgroup },
+            caption: msg, 
+            mentions: membres,
+             contextInfo: {
+            isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+             newsletterJid: '120363345407274799@newsletter',
+             newsletterName: "╭••➤®Njabulo Jb",
+             serverMessageId: 143,
+              }
+            }
+         });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
             let msg = `one or somes member(s) left group;\n`;
 
@@ -882,14 +894,24 @@ zk.ev.on('group-participants.update', async (group) => {
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
 
-                let cmsg =`      ❒─❒⁠⁠⁠⁠ *BOT-IS-RUNNING* ❒⁠⁠⁠⁠─⁠⁠⁠⁠❒⁠⁠⁠⁠
-╭❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠              
-❒⁠⁠⁠⁠ 𝑫𝑬𝑽   : *VW*   
-❒⁠⁠⁠⁠ 𝑩𝑶𝑻   : *VW*
-╰❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠`;
-                await zk.sendMessage(zk.user.id, { text: cmsg });
+                let cmsg =`
+╭─────────────━┈⊷ 
+│🌏 *NJABULO JB CONNECTED*
+╰─────────────━┈⊷
+│💫 ᴘʀᴇғɪx: *[ ${prefixe} ]*
+│⭕ ᴍᴏᴅᴇ: *${md}*
+╰─────────────━┈⊷⁠⁠⁠⁠`;
+                await zk.sendMessage(zk.user.id, { 
+                text: cmsg,
+                  contextInfo: {
+                  isForwarded: true,
+                  forwardedNewsletterMessageInfo: {
+                 newsletterJid: '120363345407274799@newsletter',
+                 newsletterName: "╭••➤®Njabulo Jb",
+                serverMessageId: 143,
                 }
-            }
+              }
+            });
             else if (connection == "close") {
                 let raisonDeconnexion = new boom_1.Boom(lastDisconnect?.error)?.output.statusCode;
                 if (raisonDeconnexion === baileys_1.DisconnectReason.badSession) {
