@@ -201,7 +201,7 @@ if (conf.Njabulo_Jb === "yes") {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\tVW GOLF ONLINE");
+            console.log("\NJABULO JB ONLINE");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -884,7 +884,7 @@ zk.ev.on('group-participants.update', async (group) => {
 
                let img = "https://files.catbox.moe/cvd9sb.jpg"; 
                 let cmsg =`ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ ᴅᴇᴠɪᴄᴇ`;
-                await zk.sendMessage(zk.user.id, { text: cmsg });
+                await zk.sendMessage(zk.user.id, { image: { url: img }, text: cmsg });
                 }
             }
             else if (connection == "close") {
