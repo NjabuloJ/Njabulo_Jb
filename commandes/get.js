@@ -35,6 +35,11 @@ fana(
           caption: `𝐓O𝐗𝐈𝐂-𝐌D\n\n◈━━━━━━━━━━━━━━━━◈\n│❒ BOOM, ${nomAuteurMessage}! Snagged @${auteurMsgRepondu.split("@")[0]}’s profile pic! 🔥\n│❒ Powered by xh_clinton\n◈━━━━━━━━━━━━━━━━◈`,
           footer: `Hey ${nomAuteurMessage}! I'm Toxic-MD, created by 𝐱𝐡_�{c𝐥𝐢𝐧𝐭𝐨𝐧 😎`,
           mentions: [auteurMsgRepondu],
+          isForwarded: true,
+          forwardedNewsletterMessageInfo: {
+          newsletterJid: '120363345407274799@newsletter',
+          newsletterName: "NJABULO JB",
+          serverMessageId: 143,
         },
         { quoted: ms }
       );
