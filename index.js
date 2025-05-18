@@ -724,8 +724,6 @@ zk.ev.on('group-participants.update', async (group) => {
              newsletterJid: '120363345407274799@newsletter',
              newsletterName: "╭••➤®Njabulo Jb",
              serverMessageId: 143,
-              }
-            }
          });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
             let msg = `one or somes member(s) left group;\n`;
@@ -909,8 +907,6 @@ zk.ev.on('group-participants.update', async (group) => {
                  newsletterJid: '120363345407274799@newsletter',
                  newsletterName: "╭••➤®Njabulo Jb",
                 serverMessageId: 143,
-                }
-              }
             });
             else if (connection == "close") {
                 let raisonDeconnexion = new boom_1.Boom(lastDisconnect?.error)?.output.statusCode;
