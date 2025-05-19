@@ -64,7 +64,7 @@ fana({
     
     await zk.sendMessage(dest, {
       image: { url: video.thumbnail},
-      caption: `🎵 *${video.title}*`,
+      caption: `🎵 Loading*${video.title}*\n> download and Subscribe via ad``,
       contextInfo: getContextInfo("Downloading", userJid, video.thumbnail)
     }, { quoted: ms });
 
@@ -82,7 +82,10 @@ fana({
       {
         audio: { url: download_url },
         mimetype: 'audio/mp4',
-        caption: `🎵 *${title}*`,
+      },
+      {
+        document: { url: download_url },
+        mimetype: 'audio/mpeg',
       }
     ];
 
@@ -114,7 +117,7 @@ fana({
     
     await zk.sendMessage(dest, {
       image: { url: video.thumbnail},
-      caption: `🎵 *${video.title}*`,
+      caption: `🎵 *${video.title}*\n> download and Subscribe via ad`,
       contextInfo: getContextInfo("Downloading", userJid, video.thumbnail)
     }, { quoted: ms });
 
@@ -132,10 +135,13 @@ fana({
       {
         video: { url: download_url },
         mimetype: 'video/mp4',
-        caption: `🎥 *${title}*`,
+      },
+      {
+        document: { url: download_url },
+        mimetype: 'video/mp4',
       }
     ];
-
+    
     for (const payload of messagePayloads) {
       await zk.sendMessage(dest, payload, { quoted: ms });
     }
