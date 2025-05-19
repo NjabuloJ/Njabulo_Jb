@@ -61,6 +61,7 @@ fana({ nomCom: "owa", categorie: "General", reaction: "❣️" }, async (dest, z
             sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
             mediaType: 1,
             renderLargerThumbnail: true
+            },
           },
         },
     },{quoted:ms});
