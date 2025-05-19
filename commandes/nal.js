@@ -72,8 +72,9 @@ fana({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      text: "⏳loading•••••••••••••\n\n⌚ wait are second•••••••••••••\n*🎧vw golf youtube downloaded you audio*✓",
-      contextInfo: getContextInfo("vw golf music", userJid, video.thumbnail)
+    image: { url: video.thumbnail},
+    caption: `🎵 *${video.title}*`,
+    contextInfo: getContextInfo("Downloading", userJid, video.thumbnail)    
     }, { quoted: ms });
 
     const apis = [
@@ -83,7 +84,7 @@ fana({
       `https://api.dreaded.site/api/ytdl/audio?url=${encodeURIComponent(video.url)}`
     ];
 
-    const downloadData = await downloadFromApis(apis);
+    constantly downloadData = await downloadFromApis(apis);
     const { download_url, title } = downloadData.result;
 
     const messagePayloads = [
@@ -124,8 +125,9 @@ fana({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      text: "⏳loading•••••••••••••\n\n⌚ wait are second•••••••••••••\n*🎥vw golf youtube downloaded you video*✓",
-      contextInfo: getContextInfo("vw golf video", userJid, video.thumbnail)
+      image: { url: video.thumbnail},
+      caption: `🎵 *${video.title}*`,
+      contextInfo: getContextInfo("Downloading", userJid, video.thumbnail)
     }, { quoted: ms });
 
     const apis = [
