@@ -73,7 +73,7 @@ fana({
     
     await zk.sendMessage(dest, {
       image: { url: video.thumbnail},
-      caption: `🎵 *${video.title}*`,
+      caption: `🎵 *${video.title}*\n> ⬇️ Njabulo Jb downloading audio This may take a moment...`,
       contextInfo: getContextInfo("Downloading", userJid, video.thumbnail)
     }, { quoted: ms });
 
@@ -129,7 +129,7 @@ fana({
     
     await zk.sendMessage(dest, {
     image: { url: video.thumbnail},
-    caption: `🎵 *${video.title}*`,
+    caption: `🎵 *${video.title}*\n> ⬇️ Njabulo Jb downloading video This may take a moment...",`,
     contextInfo: getContextInfo("Downloading", userJid, video.thumbnail)
     }, { quoted: ms });
 
