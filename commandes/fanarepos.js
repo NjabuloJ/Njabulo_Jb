@@ -87,9 +87,14 @@ This bot is built by Njabulo JB experts to enhance WhatsApp experience. Packed w
             await zk.sendMessage(dest, {
                 video: { url: mediaUrl },
                 caption: infoMsg,
-                footer: "*Njabulo Jb*, developed by Njabulo",
-                gifPlayback: true,
                 contextInfo: {
+                isForwarded: true,
+               forwardedNewsletterMessageInfo: {
+                newsletterJid: '120363345407274799@newsletter',
+                newsletterName: "NJABULO JB",
+                  serverMessageId: 143,
+                   },
+                   forwardingScore: 999, // Score to indicate it has been forwarded
                     externalAdReply: {
                         title: "Alec-Jb",
                         body: "ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ",
@@ -105,8 +110,14 @@ This bot is built by Njabulo JB experts to enhance WhatsApp experience. Packed w
             await zk.sendMessage(dest, {
                 image: { url: mediaUrl },
                 caption: infoMsg,
-                footer: "*Njabulo_Jb*, developed by Njabulo",
                 contextInfo: {
+               isForwarded: true,
+               forwardedNewsletterMessageInfo: {
+                newsletterJid: '120363345407274799@newsletter',
+                newsletterName: "NJABULO JB",
+                  serverMessageId: 143,
+                   },
+                   forwardingScore: 999, // Score to indicate it has been forwarded
                     externalAdReply: {
                         title: "Alec-Jb",
                         body: "ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ",
@@ -138,6 +149,13 @@ This bot is built by Njabulo JB experts to enhance WhatsApp experience. Packed w
             mimetype: 'audio/mpeg',
             ptt: true, // Send as a voice note
              contextInfo: {
+            isForwarded: true,
+               forwardedNewsletterMessageInfo: {
+                newsletterJid: '120363345407274799@newsletter',
+                newsletterName: "NJABULO JB",
+                  serverMessageId: 143,
+                 },
+                 forwardingScore: 999, // Score to indicate it has been forwarded
                externalAdReply: {
                title: "Alec-Jb",
                body: "ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ",
