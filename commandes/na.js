@@ -40,17 +40,17 @@ fana({ nomCom: "me", categorie: "General" }, async (dest, zk, commandeOptions) =
 *┋ᴘʟᴜɢɪɴs ᴄᴍᴅ:* ${cm.length}
 *╰─❖*
 *╭─❖*
-*┋    ❍[0]•MENULIST
-*┋    ❍[1]•MENU-AI
-*┋    ❍[2]•MENU-GENERAL
-*┋    ❍[3]•MENU-DONLOAD
-*┋    ❍[4]•MENU-USE
-*┋    ❍[5]•MENU-MOD
-*┋    ❍[6]•MENU-FUN
-*┋    ❍[7]•MENU-BOOKS
-*┋    ❍[8]•MENU-SEARCH
-*┋    ❍[9]•MENU-GROUP
-*┋    ❍[10]
+*┋    ❍[0]* •MENULIST
+*┋    ❍[1]* •MENU-AI
+*┋    ❍[2]* •MENU-GENERAL
+*┋    ❍[3]* •MENU-DONLOAD
+*┋    ❍[4]* •MENU-USE
+*┋    ❍[5]* •MENU-MOD
+*┋    ❍[6]* •MENU-FUN
+*┋    ❍[7]* •MENU-BOOKS
+*┋    ❍[8]* •MENU-SEARCH
+*┋    ❍[9]* •MENU-GROUP
+*┋    ❍[10]* •CONTROL
 *╰─┬❖*
 *╭─┴❖ʀᴇᴘʟʏ ɴᴀᴍᴇ ᴄᴏᴍᴍᴀɴᴅs 1ᴛᴏ10*
 *╰┬───────❖⳹*
@@ -60,15 +60,15 @@ fana({ nomCom: "me", categorie: "General" }, async (dest, zk, commandeOptions) =
 
     // Two sets of images to display randomly
     const extraImages1 = [
-        "https://files.catbox.moe/nj1w1s.jpg",
-        "https://files.catbox.moe/znvqsv.jpg",
-        "https://files.catbox.moe/nj1w1s.jpg"
+        "https://files.catbox.moe/du66sc.jpg",
+        "https://files.catbox.moe/149p1r.jpg",
+        "https://files.catbox.moe/8te9a3.jpg"
     ];
 
     const extraImages2 = [
-        "https://files.catbox.moe/znvqsv.jpg",
-        "https://files.catbox.moe/nj1w1s.jpg",
-        "https://files.catbox.moe/znvqsv.jpg"
+        "https://files.catbox.moe/8te9a3.jpg",
+        "https://files.catbox.moe/149p1r.jpg",
+        "https://files.catbox.moe/du66sc.jpg"
     ];
 
     // Randomly select which menu to show
@@ -94,7 +94,7 @@ fana({ nomCom: "me", categorie: "General" }, async (dest, zk, commandeOptions) =
                  forwardingScore: 999,
                  isForwarded: true,
                  forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363353854480831@newsletter',
+                  newsletterJid: '120363345407274799@newsletter',
                   newsletterName: '╭••➤®Njabulo Jb',
                   serverMessageId: 143},
                     externalAdReply: {
@@ -116,7 +116,7 @@ fana({ nomCom: "me", categorie: "General" }, async (dest, zk, commandeOptions) =
                  forwardingScore: 999,
                  isForwarded: true,
                   forwardedNewsletterMessageInfo: {
-                   newsletterJid: '120363353854480831@newsletter',
+                   newsletterJid: '120363345407274799@newsletter',
                    newsletterName: '╭••➤®Njabulo Jb',
                    serverMessageId: 143},
                     externalAdReply: {
@@ -153,7 +153,7 @@ fana({ nomCom: "me", categorie: "General" }, async (dest, zk, commandeOptions) =
              forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-              newsletterJid: '120363353854480831@newsletter',
+              newsletterJid: '120363345407274799@newsletter',
               newsletterName: '╭••➤®Njabulo Jb',
               serverMessageId: 143},
                externalAdReply: {
