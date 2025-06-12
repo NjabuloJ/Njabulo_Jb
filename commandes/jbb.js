@@ -5,7 +5,7 @@ const getFBInfo = require("@xaviabot/fb-downloader");
 const { default: axios } = require('axios');
 
 fana({
-  nomCom: "fbdl",
+  nomCom: "faceb",
   categorie: "Download",
   reaction: "📽️"
 }, async (dest, zk, commandeOptions) => {
