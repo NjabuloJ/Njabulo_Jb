@@ -44,7 +44,7 @@ fana({
           image: { url: result.thumbnail },
           caption: caption,
           footer: "Facebook Video Downloader",
-          buttons: [button]
+          buttons: [button],
         }, { quoted: ms });
       })
       .catch((error) => {
