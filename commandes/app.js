@@ -31,26 +31,6 @@ fana({
   }
 
   try {
-    const searchResponse = await axios.get(`https:                                    
-    const searchData = searchResponse.data;
-
-    if (!searchData.BK9 || searchData.BK9.length === 0) {
-      zk.sendMessage(dest, {
-        text: "No app found with that name, please try again.",
-        contextInfo: {
-          externalAdReply: {
-            title: "Njabulo Jb",
-            body: "WhatsApp status !",
-            thumbnailUrl: conf.URL,
-            sourceUrl: conf.GURL,
-            mediaType: 1,
-            showAdAttribution: true
-          }
-        }
-      });
-      return;
-    }
-
     const appDetailsResponse = await axios.get(`//bk9.fun/search/apk?q=${appName}`);
     const searchData = searchResponse.data;
 
@@ -109,8 +89,7 @@ fana({
         externalAdReply: {
           title: "ɳᴊᴀʙᴜʟᴏ ᴊʙ σғғɪᴄᴇ",
           body: appDetails.BK9.name,
-          thumbnailUrl: 'https:                               
-          sourceUrl: '//files.catbox.moe/cs7xfr.jpg',
+          thumbnailUrl: 'https://files.catbox.moe/cs7xfr.jpg',
           sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T',
           mediaType: 1,
           renderLargerThumbnail: true
