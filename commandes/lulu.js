@@ -65,10 +65,7 @@ fana({ nomCom: "lulu", aliases: ["image", "images"], categorie: "Images", reacti
         image: { url: results[i].url },
         caption: `*Downloaded by ${conf.BOT}*`,
         contextInfo: {
-          isForwarded: true,
-          forwardedNewsletterMessageInfo: {
             newsletterJid: '120363345407274799@newsletter',
-            newsletterName: "NJABULO JB",
             serverMessageId: 143,
           },
           forwardingScore: 999,
