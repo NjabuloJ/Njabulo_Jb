@@ -13,8 +13,8 @@ fana({ nomCom: "lulu", aliases: ["image", "images"], categorie: "Images", reacti
         externalAdReply: {
           title: "Njabulo Jb",
           body: "WhatsApp status !",
-          thumbnailUrl: conf.URL,
-          sourceUrl: conf.GURL,
+          thumbnailUrl: "https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u",
+          sourceUrl: "https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u",
           mediaType: 1,
           showAdAttribution: true
         }
@@ -65,10 +65,6 @@ fana({ nomCom: "lulu", aliases: ["image", "images"], categorie: "Images", reacti
         image: { url: results[i].url },
         caption: `*Downloaded by ${conf.BOT}*`,
         contextInfo: {
-            newsletterJid: '120363345407274799@newsletter',
-            serverMessageId: 143,
-          },
-          forwardingScore: 999,
           externalAdReply: {
             title: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
             body: "message on",
