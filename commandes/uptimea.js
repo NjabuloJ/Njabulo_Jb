@@ -1,6 +1,6 @@
-const { zokou } = require("../framework/zokou");
+const { fana } = require("../njabulo/fana");
 const moment = require("moment-timezone");
-const { getBuffer } = require("../framework/dl/Function");
+const { getBuffer } = require("../njabulo/dl/Function");
 const { default: axios } = require('axios');
 
 const runtime = function (seconds) {
@@ -16,7 +16,7 @@ const runtime = function (seconds) {
   return dDisplay + hDisplay + mDisplay + sDisplay;
 }
 
-zokou({
+fana({
   nomCom: 'uptimes',
   desc: 'To check runtime',
   Categorie: 'General',
@@ -52,7 +52,7 @@ zokou({
   }, { quoted: ms });
 });
 
-zokou({
+fana({
   nomCom: 'pings',
   desc: 'To check ping',
   Categorie: 'General',
