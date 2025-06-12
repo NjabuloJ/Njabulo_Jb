@@ -13,8 +13,8 @@ fana({ nomCom: "lulu", aliases: ["image", "images"], categorie: "Images", reacti
         externalAdReply: {
           title: "Njabulo Jb",
           body: "WhatsApp status !",
-          thumbnailUrl: "https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u",
-          sourceUrl: "https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u",
+          thumbnailUrl: "https://github.com/NjabuloJ/Njabulo-Jb",
+          sourceUrl: "https://github.com/NjabuloJ/Njabulo-Jb",
           mediaType: 1,
           showAdAttribution: true
         }
