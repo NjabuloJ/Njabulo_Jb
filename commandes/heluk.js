@@ -11,7 +11,7 @@ function getDescriptionFromEnv(varName) {
 }
 
 fana({
-  nomCom: 'antidelete',
+  nomCom: 'anti',
   categorie: "HEROKU-CLIENT"
 }, async (dest, zk, context) => {
   const { ms, superUser, auteurMessage, arg } = context;
@@ -80,7 +80,7 @@ fana({
   }
 
   try {
-     wait zk.sendMessage(dest, {
+      zk.sendMessage(dest, {
       text: responseMessage,
       contextInfo: {
         externalAdReply: {
