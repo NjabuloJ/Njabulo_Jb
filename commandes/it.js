@@ -18,7 +18,7 @@ fana({
   try {
     let code = arg.join(" ");
     if (!arg[0]) {
-       zk.sendMessage(dest, {
+      wait zk.sendMessage(dest, {
         text: "After the command, provide a valid JavaScript code for encryption",
         contextInfo: {
           externalAdReply: {
