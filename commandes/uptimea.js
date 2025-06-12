@@ -48,7 +48,7 @@ fana({
   await zk.sendMessage(dest, {
     text: `*_Uptime of Njabulo JB Bot is: ${runtime(process.uptime())}_*`,
     footer: "Njabulo JB Bot",
-    buttons: [button]
+    buttons: [button],
   }, { quoted: ms });
 });
 
@@ -85,6 +85,6 @@ fana({
   await zk.sendMessage(dest, {
     text: `*_Ping: ${ping}ms_*`,
     footer: "Njabulo JB Bot",
-    buttons: [button]
+    buttons: [button],
   }, { quoted: ms });
 });
