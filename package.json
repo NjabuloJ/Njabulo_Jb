@@ -1,23 +1,14 @@
 {
   "name": "Njabulo_Jb",
-  "version": "2.0.0",
-  "description": "",
-  "main": "ibrahim.js",
+  "version": "10.8.1",
+  "description": "Njabulo_Jb multi device whatsapp bob",
+  "main": "index.js",
   "scripts": {
-    "test": "node index.js",
-    "s": "node index.js",
     "toshtech": "pm2 start index.js --attach",
-    "toshtech": "pm2 start index.js --attach",
-    "c": "tsc"
+   "stop": "pm2 stop NjabuloJb",
+   "restart": "pm2 restart NjabuloJb"
   },
-  "keywords": [
-    "bot",
-    "Baileys",
-    "Bmw-md",
-    "whatsapp",
-    "whatsapp-bot",
-    "bmw-md-boy"
-  ],
+  "keywords": ["NjabuloJb", "whatsapp-bot", "whatsapp md bot"],
   "author": "Marisel",
 "license": "ISC",
   "dependencies": {
