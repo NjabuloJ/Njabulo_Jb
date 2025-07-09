@@ -1,4 +1,4 @@
-[NJABULO JB](https://raw.githubusercontent.com/NjabuloJ/Njabulo-Jb/main/media/fana.svg)](https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f)
+
 
 
 
