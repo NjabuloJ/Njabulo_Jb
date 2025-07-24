@@ -1,14 +1,14 @@
 {
-  "name": "babyboy",
+  "name": "Njabulo-Jb",
   "version": "2.0.0",
   "description": "",
-  "main": "control.js",
+  "main": "index.js",
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "s": "node control.js", 
-    "start": "node control.js", 
-    "ezra": "pm2 start control.js --attach --max-memory-restart 490M",
+    "s": "node index.js", 
+    "start": "node index.js", 
+    "toshtech": "pm2 start index.js --attach --max-memory-restart 490M",
     "c": "tsc"
   },
   "keywords": [
@@ -17,9 +17,9 @@
     "Lucky-Xforce",
     "whatsapp",
     "whatsapp-bot",
-    "frediezra"
+    "njabulofana"
   ],
-  "author": "frediezra",
+  "author": "njabulofana",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",  
