@@ -1,6 +1,6 @@
 {
-  "name": "💦LUCKY-MD-XFORCE💨 MULTI DEVICE",
-  "description": "💦LUCKY-MD-⁠XFORCE💨 Whatsapp device bot made by FrediEzra Tech Info to help Whatsapp users to enjoy while helping...",
+  "name": "Njabulo_Jb",
+  "description": "Njabulo Jb Whatsapp device bot made by Njabulo Jb Tech Info to help Whatsapp users to enjoy while helping...",
   "keywords": [
     "bot",
     "node",
@@ -8,7 +8,7 @@
     "whatsapp"
   ],
   "logo": "https://files.catbox.moe/uw4l17.jpeg",
-  "repository": "https://github.com/mr-X-force/LUCKY-MD-XFORCE",
+  "repository": "https://github.com/NjabuloJ/Njabulo_Jb",
   "succes_url": "/",
   "stack": "container",
   "env": {
@@ -60,7 +60,7 @@
     },
     "AUTO_STATUS_TEXT": {
       "description": "type your genuine status message",
-      "value": "💲YOUR STATUS VIEWED BY 💦LUCKY-MD-⁠XFORCE💨 SUCCESSFUL 😇✅✅",
+      "value": "💲YOUR STATUS VIEWED BY Njabulo Jb  SUCCESSFUL 😇✅✅",
       "required": false
     },
     "AUTO_STATUS_REPLY": {
@@ -105,7 +105,7 @@
     },
     "NUMERO_OWNER": {
       "description": "Your phone number (exclude '+' and area code, e.g., '255752593977')",
-      "value": "255752593977",
+      "value": "26777821911",
       "required": false
     },
     "STARTING_BOT_MESSAGE": {
