@@ -1,6 +1,6 @@
 {
-  "name":"𝚻𝚰𝚳𝚴𝚫𝐒𝚫-𝚻𝚳𝐃",
-  "description":"Best whatsapp bot💥 developed by   ᴛɪᴍɴᴀsᴀ ᴍᴜʟᴛɪᴘʟᴇ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ ",
+  "name":"Njabulo-Jb",
+  "description":"Best whatsapp bot developed by Njabulo Jb bw",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://files.catbox.moe/t1rw0x.jpg",
     "repository": "https://github.com/Next5x/TIMNASA_TMD1",
@@ -91,7 +91,7 @@
     },
     "OWNER_NAME": {
       "description": "don't you have a name bro.Insert your name here!!",
-      "value": "TIMNASA_TMD1",
+      "value": "Njabulo-Jb",
       "required": false
     },
     "AUTO_READ_MESSAGES": {
@@ -101,7 +101,7 @@
     },
     "NUMERO_OWNER": {
       "description": "Your phone number (exclude '+' and area code, e.g., '255752593977')",
-      "value": "255784766591",
+      "value": "26777821911",
       "required": false
     },
     "STARTING_BOT_MESSAGE": {
