@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: TIMNASA_TMD1
+    name: Njabulo_Jb
     env: node # Change to "python" or your environment if not Node.js
     plan: free
     buildCommand: npm install 
