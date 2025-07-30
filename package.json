@@ -1,25 +1,25 @@
 {
-  "name": "babyboy",
+  "name": "Njabulo_Jb",
   "version": "2.0.0",
   "description": "",
-  "main": "bot.js",
+  "main": "index.js",
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "s": "node bot.js", 
+    "s": "node index.js", 
     "start": "node bot.js", 
-    "timoth": "pm2 start bot.js --attach --max-memory-restart 490M",
+    "timoth": "pm2 start index.js --attach --max-memory-restart 490M",
     "c": "tsc"
   },
   "keywords": [
     "bot",
     "Baileys",
-    "Lucky-Xforce",
+    "Njabulo-Jb",
     "whatsapp",
     "whatsapp-bot",
-    "frediezra"
+    "njabulofana"
   ],
-  "author": "frediezra",
+  "author": "njabulofana",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",  
