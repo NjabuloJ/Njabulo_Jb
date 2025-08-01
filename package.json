@@ -358,15 +358,15 @@
 
 
 {
-  "name": "Rahmani-xmd",
+  "name": "Njabulo_Jb",
   "version": "2.0.0",
   "description": "",
-  "main": "rahmani.js",
+  "main": "fanajb.js",
   "scripts": {
-    "test": "node rahmani.js",
+    "test": "node fanajb.js",
     "s": "node rahmani.js",
-    "toshtech": "pm2 start rahmani.js --attach",
-    "toshtech": "pm2 start rahmani.js --attach",
+    "toshtech": "pm2 start fanajb.js --attach",
+    "toshtech": "pm2 start fanajb.js --attach",
     "c": "tsc"
   },
   "keywords": [
@@ -375,9 +375,9 @@
     "Rahmani-xmd",
     "whatsapp",
     "whatsapp-bot",
-    "rahmani-xmd-boy"
+    "NjabuloJb-boy"
   ],
-  "author": "Qartde",
+  "author": "NjabuloJ",
 "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
