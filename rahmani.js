@@ -846,11 +846,11 @@ zk.ev.on('group-participants.update', async (group) => {
                 console.log("------------------/-----");
                 console.log("Njabulo is Online 🕸\n\n");
                 //chargement des commandes 
-                console.log("Loading Anyway Commands ...\n");
-                fs.readdirSync(__dirname + "/rahmani").forEach((fichier) => {
+                console.log("Loading Anyway cmd ...\n");
+                fs.readdirSync(__dirname + "/cmd").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
-                            require(__dirname + "/rahmani/" + fichier);
+                            require(__dirname + "/cmd/" + fichier);
                             console.log(fichier + " Installed Successfully✔️");
                         }
                         catch (e) {
@@ -877,8 +877,7 @@ zk.ev.on('group-participants.update', async (group) => {
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
 
-                 let cmsg =`      
-                
+                 let cmsg =`              
 ╭─❖
 ┋□ 🕵️ *ɴᴀᴍᴇ : ɴᴊᴀʙᴜʟᴏ ᴊʙ*
 ┋□ 🌟 connected to device
