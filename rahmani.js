@@ -51,14 +51,14 @@ let path = require("path");
 const FileType = require('file-type');
 const { Sticker, createSticker, StickerTypes } = require('wa-sticker-formatter');
 //import chalk from 'chalk'
-const { verifierEtatJid , recupererActionJid } = require("./data/antilien");
-const { atbverifierEtatJid , atbrecupererActionJid } = require("./data/antibot");
-let evt = require(__dirname + "/njabulo/fana");
-const {isUserBanned , addUserToBanList , removeUserFromBanList} = require("./data/banUser");
-const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./data/banGroup");
-const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("./data/onlyAdmin");
+const { verifierEtatJid , recupererActionJid } = require("./bdd/antilien");
+const { atbverifierEtatJid , atbrecupererActionJid } = require("./bdd/antibot");
+let evt = require(__dirname + "/framework/zokou");
+const {isUserBanned , addUserToBanList , removeUserFromBanList} = require("./bdd/banUser");
+const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./bdd/banGroup");
+const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("./bdd/onlyAdmin");
 //const //{loadCmd}=require("/njabulo/mesfonctions")
-let { reagir } = require(__dirname + "/njabulo/app");
+let { reagir } = require(__dirname + "/framework/app");
 var session = conf.session.replace(/DULLAH-MD;;;/g,"");
 const prefixe = conf.PREFIXE;
 const more = String.fromCharCode(8206)
@@ -1717,7 +1717,7 @@ zk.ev.on('group-participants.update', async (group) => {
                 fs.readdirSync(__dirname + "/command").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
-                            require(__dirname + "/fez/" + fichier);
+                            require(__dirname + "/cmd/" + fichier);
                             console.log(fichier + " Installed Successfully✔️");
                         }
                         catch (e) {
