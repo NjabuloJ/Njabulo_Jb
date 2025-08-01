@@ -18,4 +18,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["node", "fanajb.js"]
+CMD ["node", "rahmani.js"]
