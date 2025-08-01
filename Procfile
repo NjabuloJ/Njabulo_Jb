@@ -1,2 +1,2 @@
 
-web: node fanajb.js
+web: node rahmani.js
