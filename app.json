@@ -1,9 +1,9 @@
 {
-  "name": "RAHMANI-XMD",
-  "description": "Best whatsapp bot🔥 developed by Rahmani ",
+  "name": "Njabulo_Jb",
+  "description": "Best whatsapp bot🔥 developed by NjabuloJb ",
   "keywords": ["bot", "node", "baileys", "whatsapp"],
   "logo": "https://files.catbox.moe/aktbgo.jpg",
-  "repository": "https://github.com/Qartde/RAHMANI-XMD",
+  "repository": "https://github.com/NjabuloJ/Njabulo_Jb",
   "succes_url": "/",
   "stack": "heroku-24",
   "env": {
@@ -49,7 +49,7 @@
     },
     "BOT_NAME": {
       "description": "put A name for your bot",
-      "value": "RAHMANI-XMD",
+      "value": "Njabulo_Jb",
       "required": false
     },
     "BOT_MENU_LINKS": {
@@ -79,12 +79,12 @@
     "OWNER_NAME": {
       "desc": "Your Name",
       "required": false,
-      "value": "Rahmani"
+      "value": "NjabuloJb"
     },
     "NUMERO_OWNER": {
       "desc": "Your number , dont put '+' and put you area code(exemple of kenya '254')",
       "required": true,
-      "value": "255693629079"
+      "value": "26777821911"
     },
     "WARN_COUNT": {
       "desc": "this is the limit of warn for warning commandes",
