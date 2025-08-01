@@ -361,12 +361,12 @@
   "name": "Njabulo_Jb",
   "version": "2.0.0",
   "description": "",
-  "main": "fanajb.js",
+  "main": "rahmani.js",
   "scripts": {
-    "test": "node fanajb.js",
+    "test": "node rahmani.js",
     "s": "node rahmani.js",
-    "toshtech": "pm2 start fanajb.js --attach",
-    "toshtech": "pm2 start fanajb.js --attach",
+    "toshtech": "pm2 start rahmani.js --attach",
+    "toshtech": "pm2 start rahmani.js --attach",
     "c": "tsc"
   },
   "keywords": [
