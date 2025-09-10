@@ -1,3 +1,5 @@
+//COPPY CODER ALLERT HEY CLONNER HOPE YOU DONT WANT TO COPY THIS CODE.
+
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -47,7 +49,7 @@ const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./bdd
 const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("./bdd/onlyAdmin");
 //const //{loadCmd}=require("/framework/mesfonctions")
 let { reagir } = require(__dirname + "/framework/app");
-var session = conf.session.replace(/Njabulo_Jb-WHATSAPP-BOT;;;=>/g,"");
+var session = conf.session.replace(/Zokou-MD-WHATSAPP-BOT;;;=>/g,"");
 const prefixe = conf.PREFIXE;
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
@@ -167,7 +169,7 @@ setTimeout(() => {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\tAlec Jb ONLINE");
+            console.log("\tANYWAY MD ONLINE");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -430,7 +432,7 @@ function mybotpic() {
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                     const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
-                                        pack: 'Alec-Jb',
+                                        pack: 'Zoou-Md',
                                         author: conf.OWNER_NAME,
                                         type: StickerTypes.FULL,
                                         categories: ['🤩', '🎉'],
@@ -526,9 +528,9 @@ function mybotpic() {
             };
             var txt = "bot detected, \n";
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
-            const gifLink = "https://raw.githubusercontent.com/NjabuloJb/Alec-Jb/main/media/remover.gif";
+            const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'Alec-Jb',
+                pack: 'Anyway-Md',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -668,56 +670,28 @@ zk.ev.on('group-participants.update', async (group) => {
         ppgroup = '';
     }
 
- try {
+    try {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `hallo welcome to group this group is future🙋`;
+            let msg = `*NJABULO JB WELCOME MESSAGE*`;
             let membres = group.participants;
             for (let membre of membres) {
-                msg += ` \n Hey 🖐️ @${membre.split("@")[0]} welcome to group nah🤗. \n\n`;
+                msg += ` \n❒ *Hey* 🖐️ @${membre.split("@")[0]} WELCOME TO OUR GROUP. \n\n`;
             }
 
-            msg += `read the group description to avoid getting removeved🧏 `;
+            msg += `❒ *READ THE GROUP DESCRIPTION TO AVOID GETTING REMOVED* `;
 
-            zk.sendMessage(group.id, {
-              image: { url: ppgroup },
-              caption: msg,
-              contextInfo: {
-               footer: "*Njabulo Jb*, developed by Njabulo",
-                gifPlayback: true,
-                externalAdReply: {
-                title: "Njabulo Jb",
-                body: membres,
-                mediaType: 1,
-                 thumbnailUrl: "https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u",
-                 sourceUrl: "https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u",
-                 renderLargerThumbnail: true,
-                 showAdAttribution: true,
-                }
-               }
-            });
+            zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
-            let msg = `one or somes member(s) left group;🤷\n l will miss you goodbye🚮\n`;
+            let msg = `one or somes member(s) left group;\n`;
 
             let membres = group.participants;
             for (let membre of membres) {
                 msg += `@${membre.split("@")[0]}\n`;
             }
 
-            zk.sendMessage(group.id, { 
-                text: msg,
-                 contextInfo: {
-                  externalAdReply: {
-                 title: "Njabulo Jb",
-                 body: membres,
-                 thumbnailUrl: "https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u",
-                 sourceUrl: "https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u",
-                 mediaType: 1,
-                 showAdAttribution: true
-                  }
-                }
-            });
+            zk.sendMessage(group.id, { text: msg, mentions: membres });
 
         } else if (group.action == 'promote' && (await recupevents(group.id, "antipromote") == 'on') ) {
             //  console.log(zk.user.id)
@@ -757,7 +731,6 @@ zk.ev.on('group-participants.update', async (group) => {
     }
 });
 
-
 /******** fin d'evenement groupe update *************************/
 
 
@@ -785,7 +758,7 @@ zk.ev.on('group-participants.update', async (group) => {
                   zk.sendMessage(crons[i].group_id, { image : { url : './media/chrono.webp'} , caption: "Hello, it's time to close the group; sayonara." });
 
                 }, {
-                    timezone: "Africa/Tanzania"
+                    timezone: "Africa/Botswana"
                   });
               }
         
@@ -802,7 +775,7 @@ zk.ev.on('group-participants.update', async (group) => {
 
                  
                 },{
-                    timezone: "Africa/Tanzania"
+                    timezone: "Africa/Botswana"
                   });
               }
         
@@ -835,16 +808,16 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Njabulo is connecting...");
+                console.log("ℹ️ Njabulo Jb is connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ Njabulo Connected to WhatsApp! ☺️");
+                console.log("✅ Njabulo Jb Connected to WhatsApp! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Njabulo is Online 🕸\n\n");
+                console.log("Anyway Md is Online 🕸\n\n");
                 //chargement des commandes 
                 console.log("Loading Anyway Commands ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
@@ -877,32 +850,16 @@ zk.ev.on('group-participants.update', async (group) => {
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
 
-                 let cmsg =`      
-                
-╭─❖
-┋□ 🕵️ *ɴᴀᴍᴇ : ɴᴊᴀʙᴜʟᴏ ᴊʙ*
-┋□ 🌟 connected to device
-╰─❖
-
-*GitHub* https://github.com/NjabuloJ/Njabulo-Jb
-`;
-                await zk.sendMessage(zk.user.id, { 
-                  text: cmsg,
-                  contextInfo: {
-                  footer: "*Njabulo Jb*, developed by Njabulo",
-                  gifPlayback: true,
-                  externalAdReply: {
-                  title: "Njabulo Jb",
-                  body: "Message bot connected",
-                   mediaType: 1,
-                     thumbnailUrl: "https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u",
-                    sourceUrl: "https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u",
-                    renderLargerThumbnail: true,
-                    showAdAttribution: true,
-                   }
-                 }
-                });
-               }
+                let cmsg =`     ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴄᴏɴɴᴇᴄᴛᴇᴅ
+╭─────────────━┈⊷ 
+│💫 ᴘʀᴇғɪx: *[ ${prefixe} ]*
+│⭕ ᴍᴏᴅᴇ: *${md}*
+│🌐use . settings 
+│🪰follow channel 
+│✅https://shorturl.at/q8ZuS
+╰─────────────━┈⊷⁠⁠⁠⁠`;
+                await zk.sendMessage(zk.user.id, { text: cmsg });
+                }
             }
             else if (connection == "close") {
                 let raisonDeconnexion = new boom_1.Boom(lastDisconnect?.error)?.output.statusCode;
