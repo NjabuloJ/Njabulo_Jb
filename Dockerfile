@@ -1,3 +1,9 @@
+# Use the official Node.js LTS image (Debian-based)
+FROM node:lts-buster
+
+# Set working directory
+WORKDIR /app
+
 # Update package sources (Buster repos are archived) and install dependencies
 RUN sed -i 's|http://deb.debian.org/debian|http://archive.debian.org/debian|g' /etc/apt/sources.list \
  && sed -i '/security/d' /etc/apt/sources.list \
