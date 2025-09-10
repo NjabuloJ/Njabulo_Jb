@@ -1,5 +1,5 @@
 {
-  "name": "RAHEEM-XMD",
+  "name": "Njabulo_Jb",
   "description": "Whatsapp device bot made to help Whatsapp users to enjoy while helping..",
   "keywords": [
     "bot",
@@ -8,7 +8,7 @@
     "whatsapp"
   ],
   "logo": "https://files.catbox.moe/7hxv7a.jpg",
-  "repository": "https://github.com/Raheem-cm/RAHEEM_XMD-",
+  "repository": "https://github.com/NjabuloJ/Njabulo_Jb",
   "succes_url": "/",
   "stack": "container",
   "env": {
