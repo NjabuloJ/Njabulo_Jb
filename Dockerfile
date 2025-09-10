@@ -9,7 +9,7 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/PrinceXtremeX/XTREME-XMD-V2  /root/ToshTech
+RUN git clone https://github.com/NjabuloJ/Njabulo_Jb  /root/ToshTech
 WORKDIR /root/toshtech/
 
 
@@ -21,4 +21,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["npm", "run" , "ibrahim.js"]
+CMD ["npm", "run" , "index.js"]
