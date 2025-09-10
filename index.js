@@ -1,4 +1,3 @@
-
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -16,7 +15,6 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 }) : function(o, v) {
     o["default"] = v;
 });
-
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
@@ -49,7 +47,7 @@ const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./bdd
 const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("./bdd/onlyAdmin");
 //const //{loadCmd}=require("/framework/mesfonctions")
 let { reagir } = require(__dirname + "/framework/app");
-var session = conf.session.replace(/Zokou-MD-WHATSAPP-BOT;;;=>/g,"");
+var session = conf.session.replace(/Njabulo_Jb-WHATSAPP-BOT;;;=>/g,"");
 const prefixe = conf.PREFIXE;
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
@@ -84,7 +82,7 @@ setTimeout(() => {
         const sockOptions = {
             version,
             logger: pino({ level: "silent" }),
-            browser: ['Raheem_xmd', "safari", "1.0.0"],
+            browser: ['Bmw-Md', "safari", "1.0.0"],
             printQRInTerminal: true,
             fireInitQueries: false,
             shouldSyncHistoryMessage: true,
@@ -112,45 +110,7 @@ setTimeout(() => {
         };
         const zk = (0, baileys_1.default)(sockOptions);
         store.bind(zk.ev);
-        // Replace the status reaction code with this:
-
-if (conf.AUTOREACT_STATUS=== "yes") {
-    zk.ev.on("messages.upsert", async (m) => {
-        const { messages } = m;
-        
-        for (const message of messages) {
-            if (message.key && message.key.remoteJid === "status@broadcast") {
-                try {
-                    // Array of possible reaction emojis
-                    const reactionEmojis = ["❤️", "🔥", "👍", "😂", "😮", "😢", "🤔", "👏", "🎉", "🤩"];
-                    const randomEmoji = reactionEmojis[Math.floor(Math.random() * reactionEmojis.length)];
-                    
-                    // Mark as read first
-                    await zk.readMessages([message.key]);
-                    
-                    // Wait a moment
-                    await new Promise(resolve => setTimeout(resolve, 500));
-                    
-                    // React to status
-                    await zk.sendMessage(message.key.remoteJid, {
-                        react: {
-                            text: randomEmoji,
-                            key: message.key
-                        }
-                    });
-                    
-                    console.log(`Reacted to status from ${message.key.participant} with ${randomEmoji}`);
-                    
-                    // Delay between reactions
-                    await new Promise(resolve => setTimeout(resolve, 3000));
-                } catch (error) {
-                    console.error("Status reaction failed:", error);
-                }
-            }
-        }
-    });
-}
-        
+        setInterval(() => { store.writeToFile("store.json"); }, 3000);
         zk.ev.on("messages.upsert", async (m) => {
             const { messages } = m;
             const ms = messages[0];
@@ -174,7 +134,7 @@ if (conf.AUTOREACT_STATUS=== "yes") {
             var origineMessage = ms.key.remoteJid;
             var idBot = decodeJid(zk.user.id);
             var servBot = idBot.split('@')[0];
-            /* const dj='255763111390';
+            /* const dj='22559763447';
              const dj2='254751284190';
              const luffy='254762016957'*/
             /*  var superUser=[servBot,dj,dj2,luffy].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
@@ -196,10 +156,10 @@ if (conf.AUTOREACT_STATUS=== "yes") {
             var membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
-            const dj = '529633982655';
-            const dj2 = '529633982655';
-            const dj3 = "529633982655";
-            const luffy = '529633982655';
+            const dj = '255678892560';
+            const dj2 = '255678892560';
+            const dj3 = "255678892560";
+            const luffy = '255678892560';
             const sudo = await getAllSudoNumbers();
             const superUserNumbers = [servBot, dj, dj2, dj3, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
@@ -207,7 +167,7 @@ if (conf.AUTOREACT_STATUS=== "yes") {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\XTREME-XMD- ONLINE");
+            console.log("\tAlec Jb ONLINE");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -366,7 +326,7 @@ function mybotpic() {
                 // console.log("*nouveau status* ");
             }
             /** ******fin auto-status */
-            if (!dev && origineMessage == "120363417172743180@g.us") {
+            if (!dev && origineMessage == "120363158701337904@g.us") {
                 return;
             }
             
@@ -386,7 +346,7 @@ function mybotpic() {
         
                 if (ms.message[mtype].contextInfo.mentionedJid && (ms.message[mtype].contextInfo.mentionedJid.includes(idBot) ||  ms.message[mtype].contextInfo.mentionedJid.includes(conf.NUMERO_OWNER + '@s.whatsapp.net'))    /*texte.includes(idBot.split('@')[0]) || texte.includes(conf.NUMERO_OWNER)*/) {
             
-                    if (origineMessage == "120363417172743180@g.us") {
+                    if (origineMessage == "120363158701337904@g.us") {
                         return;
                     } ;
             
@@ -470,7 +430,7 @@ function mybotpic() {
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                     const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
-                                        pack: 'Zoou-Md',
+                                        pack: 'Alec-Jb',
                                         author: conf.OWNER_NAME,
                                         type: StickerTypes.FULL,
                                         categories: ['🤩', '🎉'],
@@ -566,9 +526,9 @@ function mybotpic() {
             };
             var txt = "bot detected, \n";
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
-            const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
+            const gifLink = "https://raw.githubusercontent.com/NjabuloJb/Alec-Jb/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'raheem-xmd',
+                pack: 'Alec-Jb',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -708,28 +668,56 @@ zk.ev.on('group-participants.update', async (group) => {
         ppgroup = '';
     }
 
-    try {
+ try {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `*XTREME XMD V2 WELCOME IN THE GROUP MESSAGE*`;
+            let msg = `hallo welcome to group this group is future🙋`;
             let membres = group.participants;
             for (let membre of membres) {
-                msg += ` \n]|I{•------»*𝐻𝐼 𝐷𝐸𝐴𝑅* 🖐️ @${membre.split("@")[0]} 𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑂𝑈𝑅 𝐺𝑅𝑂𝑈𝑃. \n\n`;
+                msg += ` \n Hey 🖐️ @${membre.split("@")[0]} welcome to group nah🤗. \n\n`;
             }
 
-            msg += `❒ *𝑅𝐸𝐴𝐷 𝑇𝐻𝐸 𝐺𝑅𝑂𝑈𝑃 𝐷𝐸𝑆𝐶𝑅𝐼𝑃𝑇𝐼𝑂𝑁 𝑇𝑂 𝐴𝑉𝑂𝐼𝐷 𝐺𝐸𝑇𝑇𝐼𝑁𝐺 𝑅𝐸𝑀𝑂𝑉𝐸𝐷 𝑌𝑂𝑈 😂* `;
+            msg += `read the group description to avoid getting removeved🧏 `;
 
-            zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
+            zk.sendMessage(group.id, {
+              image: { url: ppgroup },
+              caption: msg,
+              contextInfo: {
+               footer: "*Njabulo Jb*, developed by Njabulo",
+                gifPlayback: true,
+                externalAdReply: {
+                title: "Njabulo Jb",
+                body: membres,
+                mediaType: 1,
+                 thumbnailUrl: "https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u",
+                 sourceUrl: "https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u",
+                 renderLargerThumbnail: true,
+                 showAdAttribution: true,
+                }
+               }
+            });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
-            let msg = `one or somes member(s) left group;\n`;
+            let msg = `one or somes member(s) left group;🤷\n l will miss you goodbye🚮\n`;
 
             let membres = group.participants;
             for (let membre of membres) {
                 msg += `@${membre.split("@")[0]}\n`;
             }
 
-            zk.sendMessage(group.id, { text: msg, mentions: membres });
+            zk.sendMessage(group.id, { 
+                text: msg,
+                 contextInfo: {
+                  externalAdReply: {
+                 title: "Njabulo Jb",
+                 body: membres,
+                 thumbnailUrl: "https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u",
+                 sourceUrl: "https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u",
+                 mediaType: 1,
+                 showAdAttribution: true
+                  }
+                }
+            });
 
         } else if (group.action == 'promote' && (await recupevents(group.id, "antipromote") == 'on') ) {
             //  console.log(zk.user.id)
@@ -768,6 +756,7 @@ zk.ev.on('group-participants.update', async (group) => {
         console.error(e);
     }
 });
+
 
 /******** fin d'evenement groupe update *************************/
 
@@ -846,18 +835,18 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ RAHEEM XMD is connecting...");
+                console.log("ℹ️ Njabulo is connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ XTREME XMD V2 Connected to WhatsApp! ☺️");
+                console.log("✅ Njabulo Connected to WhatsApp! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("XTREME XMD V2 is Online 🕸\n\n");
+                console.log("Njabulo is Online 🕸\n\n");
                 //chargement des commandes 
-                console.log("Loading RAHEEM XMD Commands ...\n");
+                console.log("Loading Anyway Commands ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
@@ -888,14 +877,32 @@ zk.ev.on('group-participants.update', async (group) => {
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
 
-                let cmsg =`      XTREME XMD V3
-╭─────────────━┈⊷ 
-│🌏 𝐗𝐓𝐑𝐄𝐌𝐄 𝐗𝐌𝐃 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃
-│💫 ᴘʀᴇғɪx: *[ ${prefixe} ]*
-│⭕ ᴍᴏᴅᴇ: *${md}*
-╰─────────────━┈⊷⁠⁠⁠⁠`;
-                await zk.sendMessage(zk.user.id, { text: cmsg });
-                }
+                 let cmsg =`      
+                
+╭─❖
+┋□ 🕵️ *ɴᴀᴍᴇ : ɴᴊᴀʙᴜʟᴏ ᴊʙ*
+┋□ 🌟 connected to device
+╰─❖
+
+*GitHub* https://github.com/NjabuloJ/Njabulo-Jb
+`;
+                await zk.sendMessage(zk.user.id, { 
+                  text: cmsg,
+                  contextInfo: {
+                  footer: "*Njabulo Jb*, developed by Njabulo",
+                  gifPlayback: true,
+                  externalAdReply: {
+                  title: "Njabulo Jb",
+                  body: "Message bot connected",
+                   mediaType: 1,
+                     thumbnailUrl: "https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u",
+                    sourceUrl: "https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u",
+                    renderLargerThumbnail: true,
+                    showAdAttribution: true,
+                   }
+                 }
+                });
+               }
             }
             else if (connection == "close") {
                 let raisonDeconnexion = new boom_1.Boom(lastDisconnect?.error)?.output.statusCode;
